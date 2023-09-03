@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+
+        <div class="min-h-screen flex items-center justify-center">
+            <div class="flex flex-col bg-gray-200 rounded p-7 w-full max-w-xs my-5 ">
+                <div class="flex justify-between items-center ">
+                    <input id="inputBox" class="w-[80%] px-3 py-1.5  bg-slate-200 rounded-md shadow-sm border-black" type="text" placeholder="Enter Your Location"> 
+                    <svg id="searchBtn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                      </svg>
+
+                </div>
+            <div class="mt-6 text-6xl self-center inline-flex items-center justify-center rounded-lg text-indigo-400 h-24 w-24">
+            <svg class="w-32 h-32" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
+            </div>
+            <div class="flex flex-row items-center justify-center mt-6">
+                <div id="temperature" class="font-medium text-4xl ">20 <sup class="text-md">°C</sup></div>
+              
+            </div>
+                <p id="description" class="font-mono text-lg font-bold text-center py-2">Light Rain</p>
+            <div class="flex flex-row justify-between mt-6">
+                <div class="flex flex-col items-center">
+                    <div class="font-medium text-sm">Wind</div>
+                    <div id="wind" class="text-sm text-gray-500">9k/h</div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div  class="font-medium text-sm">Humidity</div>
+                    <div id="humidity" class="text-sm text-gray-500">68%</div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="font-medium text-sm">Visibility</div>
+                    <div class="text-sm text-gray-500">10km</div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="./main.js"></script>
+</body>
+</html>
